@@ -1,5 +1,6 @@
 package com.snoroc;
 
+import com.snoroc.rest.MainController;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,7 +24,7 @@ public class SpringBootAppApplication {
 			String[] beanDefinitionNames = context.getBeanDefinitionNames();
 			Arrays.sort(beanDefinitionNames);
 			for(String beanName : beanDefinitionNames) {
-				//System.out.println(beanName);
+				System.out.println(beanName);
 			}
 		};
 	}
